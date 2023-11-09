@@ -7,7 +7,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: Nunito,sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 :root{
     --bg-color:white;
@@ -215,7 +215,7 @@ line-height: 1.3;
 }
 .home-content p{
     font-size: 2rem;
-    margin: 2rem 0 4rem;
+    margin: 3rem 0 4rem;
     color:  #1f2938cc;;
 }
 .btn-box{
@@ -268,6 +268,15 @@ transition: .5s;
 }
 .btn-box .btn:hover::before{
     width: 100%;
+}
+.home-sci{
+    margin-top: 7rem;
+}
+.home-sci a{
+    text-align: center;
+    font-size: 35px;
+    padding: 1.2rem;
+    
 }
 .home-image{
     position: absolute;
