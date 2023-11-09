@@ -570,6 +570,9 @@ margin: .8rem 0;
    
 
 }
+.footer-iconTop a{
+    font-size: 30px;
+}
 /* ***************animatiom************/
 .logo .animate{
     animation: showRight 1s ease forwards;
