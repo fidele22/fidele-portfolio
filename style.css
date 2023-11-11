@@ -24,12 +24,16 @@ html{
 }
 body{
     background:var(--bg-color);
-    color: var(--text-color);
+     font-size: 16px;
+     color: #26282b;
+     line-height: 1.8em;
+    
   
 }
 nav {
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    color:black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -57,7 +61,7 @@ nav {
     position: relative;
     font-size: 36px;
     text-decoration: none;
-    color: #fff;
+    color: black
 }
 
 .nav-links {
@@ -71,11 +75,27 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #26282b;
     font-size: 20px;
     padding: 2rem;
 }
-
+.nav-links a:hover{
+    color: #61DAFB;
+}
+.nav-links li ::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #61DAFB;
+    position: absolute;
+    transition: all ease-in-out 220ms;
+    margin: 0 0 0 1.6%;
+}
+.nav-links li :hover::after{
+    width: 5%;
+}
+/*humbergar menu */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -85,11 +105,22 @@ nav {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: white;
     margin: 3px 0;
 }
-
+.navbar h1 span{
+    color:black;
+    background-color:white;
+    border-radius: 50%;
+}
 @media (max-width: 768px) {
+    .navbar {
+        background-color: #333;
+        height: 7rem;
+    }
+    .bar{
+        background-color: white;
+    }
     .menu-toggle {
         display: flex;
     }
@@ -101,8 +132,12 @@ nav {
         top: 50px;
         right: 0;
         width: 100%;
-        height:15rem;
-        text-align: center;
+        height:20rem;
+        text-align: start;
+        padding: 4rem;
+    }
+    .nav-links li :hover::after{
+        width: 0%;
     }
     .nav-links.active {
         display: flex;
@@ -116,6 +151,7 @@ nav {
     }
     .logo{
         font-size: 30px;
+        color: white;
     }
    
 }
@@ -127,6 +163,7 @@ nav {
         font-size: 26px;
     }
 }
+
 /******************************************home section*************************/
 section {
     min-height: 100vh;
@@ -145,6 +182,11 @@ section {
 .home-content{
     max-width: 60rem;
 
+}
+.home-content h2{
+    padding: 2rem;
+    color: blue;
+    margin-left: 5rem;
 }
 .home-content h1{
 position: relative;
