@@ -181,6 +181,7 @@ section {
 }
 .home-content{
     max-width: 60rem;
+   margin-top: 20rem;
 
 }
 .home-content h2{
@@ -575,7 +576,9 @@ padding-bottom: 7rem;
     color:#1f2938cc;
     font-size: 2rem;
 }
-
+.error{
+    color: red;
+}
 .column {
     float: left;
     width: 25%;
@@ -630,6 +633,7 @@ padding-bottom: 7rem;
 position: relative;
 width: 49%;
 margin: .8rem 0;
+height: 20%;
 }
 .contact form .input-box .input-field input,
 .contact form .textarea textarea{
@@ -664,16 +668,34 @@ margin: .8rem 0;
     font-size: 35px;
     padding: 1.2rem;
     color: yellow;
+   
     
+}
+.Copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25rem;
+}
+.footer-text p{
+    text-align: center;
 }
 .footer p{
     font-size: 1.6rem;
    color: white;
+   text-align: center;
 
 }
 .footer-iconTop a{
     font-size: 30px;
     color: yellow;
+    margin-left:40rem;
+}
+.footer hr{
+    color:black;
+    font-weight: 900;
+    border: 1rem;
 }
 /* ***************animatiom************/
 .logo .animate{
@@ -699,6 +721,13 @@ margin: .8rem 0;
     .footer {
         padding: 2rem 4%;
     }
+    .Copyright{
+        margin-left:10rem;
+    }
+    .footer-iconTop a{
+        margin-left: 20rem;
+    }
+
 }
 @media (max-width: 520px){
     html{
@@ -721,5 +750,11 @@ margin: .8rem 0;
     }
     .footer{
         padding: 2rem 6%;
+    }
+    .Copyright{
+        margin-left:3rem;
+    }
+    .footer-iconTop a{
+        margin-left: 5rem;
     }
 }
