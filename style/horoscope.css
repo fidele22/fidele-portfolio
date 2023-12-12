@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	/* position: relative;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+	url("https://images.pexels.com/photos/3307194/pexels-photo-3307194.jpeg?auto=compress&cs=tinysrgb&w=600");
+	object-fit: cover;
+  	opacity: 0.6;
+	background-size: cover;
+	background-position: center; */
+	/*background-image:;*/
+	/* linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), 
+	 url("https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=1060&t=st=1665164272~exp=1665164872~hmac=0ce7913fde5fe6097cb6c7d3b2bef1b5c6cd25f55c9d891f50232f265fd40f26");
+ */ 
+ background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: black;
+
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+	color: #fff;
+	width: 700px;
+	/* height: 85vh; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 3rem;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+}
+.field{
+	 width: 100%;
+	display: flex;
+
+	gap: 1.5rem;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	width: 80%;
+	height: 40px;
+	border-radius: 5px;
+	border: 0px;
+	padding: 0px 10px;
+}
+label{
+	text-transform: capitalize;
+	font-size: 22px;
+	color: #777;
+}
+input[type ="date"]{
+	font-size: 18px;
+	color: black;
+	padding: .7rem 1rem;
+	background-color: rgb(255, 217, 0);
+	border: none;
+	border-radius: .4rem;
+}
+.btn{
+	cursor: pointer;
+	color: #fff;
+	font-size: 20px;
+	height: 30px;
+	border-radius: 5px;
+	border: 0px;
+	padding: 2px 20px;
+	background-color: rgb(255, 217, 0);
+	margin-top: 0px;
+	/* margin-left: 4rem; */
+}
+.horo-cont{
+	display: none;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	justify-content: center;
+}
+.horo-name{
+	font-size: 30px;
+	text-transform: capitalize;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.horo-pic{
+	margin: 0 auto;
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+}
+.paragraph{
+	width: 100%;
+	height: 4rem;
+}
+.horo-descript{
+	font-size: 22px;
+}
+label{
+	color:white;
+}
+.hide{
+	/* display: none; */
+	opacity: 0;
+}
+/* -----------------------------MEDIA QUERIES-------------------------------------- */
+@media all and (max-width:755px) {
+  body{
+    height:150vh
+  }
+.container{
+	width: 500px;
+	height: 100vh;
+}
+}
+@media all and (max-width:520px) {
+	body{
+		height: 110vh;
+	}
+	.container{
+		width: 350px;
+		height: 120vh;
+	}
+  .container{
+    height:110vh
+  }
+	.field{
+		flex-direction: column;
+	}
+	.horo-cont{
+		margin-top: 2rem;
+	}
+	.btn{
+		margin-top: 4rem;
+	}
+	}
