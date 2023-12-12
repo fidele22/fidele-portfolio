@@ -678,6 +678,9 @@ padding-bottom: 7rem;
     width: 25%;
     padding: 1rem 10px;
   }
+  .column:hover{
+    background-color: #112e42;
+  }
   .card i{
     font-size:60px;
     padding: 1rem
@@ -685,6 +688,7 @@ padding-bottom: 7rem;
   .card label{
     color: rgb(69, 115, 223);
     font-weight: 700;
+    cursor: pointer;
   }
   /* Remove extra left and right margins, due to padding in columns */
   .row {margin: 6rem -5px;}
